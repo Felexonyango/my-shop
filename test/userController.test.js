@@ -27,8 +27,7 @@ describe('USERS', () => {
         .end((err, res) => {
           res.should.have.status(201)
           res.should.have.a('object')
-          res.body.should.have.property('name')
-          res.body.should.have.property('email')
+      
           done()
         })
     })
