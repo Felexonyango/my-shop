@@ -1,8 +1,8 @@
 export default function formatter(value) {
   const options = {
     style: 'currency',
-    currency: 'INR',
+    currency: 'US',
     minimumFractionDigits: 2,
   }
-  return new Intl.NumberFormat('en-IN', options).format(value)
+  return new Intl.NumberFormat('US', options).format(value)
 }
